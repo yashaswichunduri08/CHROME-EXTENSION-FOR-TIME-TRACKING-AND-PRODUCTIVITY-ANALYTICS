@@ -1,0 +1,115 @@
+body {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #f0f0f0;
+}
+
+.container {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px; /* responsive max width */
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.tab {
+  flex: 1;
+  padding: 6px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  border-bottom: 2px solid transparent;
+  color: #ccc;
+}
+
+.tab.active {
+  border-bottom: 2px solid #00bcd4;
+  font-weight: bold;
+  color: #00bcd4;
+}
+
+.summary,
+.domain-list,
+.chart-container {
+  background-color: #1e1e1e; /* dark card background */
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.summary div {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #ddd;
+}
+
+.domain-list-header,
+.domain-item {
+  font-size: 12px;
+  padding: 6px 10px;
+  color: #e0e0e0;
+}
+
+.domain-item {
+  border-bottom: 1px solid #333;
+}
+
+.domain-item:last-child {
+  border-bottom: none;
+}
+
+.domain-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 160px;
+}
+
+.time-spent {
+  font-weight: bold;
+  color: #00bcd4;
+}
+
+#timeChart {
+  width: 100% !important;
+  height: 160px !important;
+}
+
+/* 📱 Responsive tweaks */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 8px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+
+  .tab {
+    font-size: 11px;
+  }
+
+  .summary div,
+  .domain-list-header,
+  .domain-item {
+    font-size: 11px;
+  }
+}
