@@ -22,3 +22,4 @@ It gives a clear summary of daily, weekly, and all-time activity, helping users 
 
 # OUTPUT :
 
+![Image](https://github.com/user-attachments/assets/5177a403-f9e2-4b3e-b5c9-b05a3add8fc6)
